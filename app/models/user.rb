@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   # Remember to create a migration!
   has_many :cities
 
-  validates :username, :email, :password, presence: true
+  validates :username, :email, :hashed_password, presence: true
 
   def password
     @password ||= BCrypt::Password.new(hashed_password)

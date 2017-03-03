@@ -70,6 +70,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-darwin-15
 
 DEPENDENCIES
   activerecord (~> 4.2.0)
@@ -86,3 +87,6 @@ DEPENDENCIES
   shoulda-matchers
   sinatra (~> 1.0)
   sinatra-contrib
+
+BUNDLED WITH
+   1.14.5
