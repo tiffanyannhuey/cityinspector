@@ -18,6 +18,7 @@ $(document).ready(function() {
       data: data
     })
     .done(function(response){
+      $('.teleport-widget-link').remove();
       $('li').remove();
       var listItem = "<li></li>"
       console.log(response);
