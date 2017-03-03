@@ -21,12 +21,12 @@ $(document).ready(function() {
       $('li').remove();
       var listItem = "<li></li>"
       console.log(response);
-      console.log(response["data"]["widget"]);
+      console.log(response["widget"]);
       // console.log(response["data"]["categories"][0]["name"])
       var data = response["data"]["categories"];
       for(i=0; i< data.length-2; i++ ){
         $('ul').append("<li style="+data[i]["color"]+">"+data[i]["name"]+ ": "+ data[i]["score_out_of_10"]+"</li>")}
-
+      $(".info").append(response["widget"])
       // console.log($('form#find-city'))
       $('form#find-city')[0].reset();
     })
