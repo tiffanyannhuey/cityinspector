@@ -18,11 +18,12 @@ $(document).ready(function() {
       data: data
     })
     .done(function(response){
-      $('.teleport-widget-link').remove();
+      console.log($('div.info iframe'))
+      $('div.info iframe').remove();
       $('li').remove();
       var listItem = "<li></li>"
       console.log(response);
-      console.log(response["widget"]);
+      // console.log(response["widget"]);
       // console.log(response["data"]["categories"][0]["name"])
       var data = response["data"]["categories"];
       for(i=0; i< data.length-2; i++ ){
