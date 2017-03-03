@@ -2,6 +2,7 @@
 
 .container {
   width: 720px;
+  height: 720px;
   margin: 0 auto;
   border: 1px solid black;
   background-image: url("http://www.thephotoargus.com/wp-content/uploads/2015/08/kerry-park3.jpg");
