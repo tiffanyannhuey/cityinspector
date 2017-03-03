@@ -27,7 +27,8 @@ $(document).ready(function() {
       for(i=0; i< data.length-2; i++ ){
         $('ul').append("<li>"+data[i]["name"]+ ": "+ data[i]["score_out_of_10"]+"</li>")
       }
-
+      console.log($('form#find-city'))
+      $('form#find-city')[0].reset();
     })
     .fail(function(){
     })
