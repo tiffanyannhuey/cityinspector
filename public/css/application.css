@@ -1,10 +1,22 @@
+* {border: 1px solid red;}
 
 .container {
   width: 720px;
   margin: 0 auto;
   border: 1px solid black;
+  background-image: url("http://www.thephotoargus.com/wp-content/uploads/2015/08/kerry-park3.jpg");
 }
 
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: grey;
+}
+
+.list-item {
+  width:20%;
+}
 
 /*.list {
   display: flex;
@@ -29,3 +41,9 @@ h1 {
   padding-bottom: 20px;
   padding-top: 20px
 }
+
+.list {
+  background-color: white;
+  opacity: 0.2;
+}
+
