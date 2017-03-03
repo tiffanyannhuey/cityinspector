@@ -1,0 +1,16 @@
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+/*.list {
+  display: flex;
+}*/
+
+.form {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
