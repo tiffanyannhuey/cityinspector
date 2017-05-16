@@ -9,7 +9,8 @@ post '/users' do
 puts params[:user].to_s
 user = User.new(params[:user])
   if user.save
-    redirect '/login'
+    session[:user_id] = user.id
+    redirect '/'
   else
     @errors = user.errors.full_messages
     erb :"/users/new"

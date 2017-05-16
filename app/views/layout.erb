@@ -16,11 +16,19 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title>Some Name Here</title>
+  <title>Work Place</title>
 </head>
 <body>
   <div class="container">
-  <h1>Some Name Here</h1>
+  <nav>
+  <% if current_user %>
+    <p class="nav-item">Welcome <%= current_user.username%></p>
+    <p class="nav-item"><a href="/logout">Logout</a></p>
+  <% else %>
+  <p class="nav-item"><a href="/users/new">Sign Up</a></p>
+  <% end %>
+  </nav>
+
   <%= yield %>
   </div>
 </body>
