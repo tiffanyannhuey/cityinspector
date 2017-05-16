@@ -1,4 +1,6 @@
 
+### City Inspector
+
 [City Inspector](https://cityinspector.herokuapp.com/login) is a one page web application that displays quality of life ratings for potential cities that you would want to live in, as well as expected salary range based on job title. 
 
 This was a one-day solo challenge to explore using APIs and create an application from scratch. Full details of the challenge are below:
